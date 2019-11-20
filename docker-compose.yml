@@ -1,0 +1,31 @@
+version: "3.7"
+networks:
+  omnibot:
+    name: omnibot
+    external: true
+services:
+  eventbot-tablecreator:
+    image: lyft/eventbot
+    init: true
+    restart: on-failure
+    depends_on:
+      - dynamo
+    env_file: ./config/development/eventbot.env
+    command: "python3 manage.py create-tables"
+  eventbot:
+    image: lyft/eventbot
+    init: true
+    restart: on-failure
+    networks:
+      - default
+      - omnibot
+    depends_on:
+      - dynamo
+      - eventbot-tablecreator
+    env_file: ./config/development/eventbot.env
+    volumes:
+      - ./config/development/logging.conf:/etc/eventbot/logging.conf
+    command: "gunicorn --config /srv/eventbot/config/gunicorn.conf eventbot.wsgi:app --workers=2 -k gevent --access-logfile=- --error-logfile=-"
+  dynamo:
+    image: tray/dynamodb-local
+    command: -port 7777 -dbPath /tmp

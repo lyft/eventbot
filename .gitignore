@@ -1,0 +1,63 @@
+# VIM swap files
+*.sw*
+
+# C extensions
+*.so
+
+# Packages
+bin/
+build/
+dist/
+downloads/
+env/
+lib/
+lib64/
+parts/
+sdist/
+var/
+
+# Translations
+*.mo
+
+# Mr Developer (mac, editor, IDEs, etc)
+.mr.developer.cfg
+.project
+.pydevproject
+.vagrant
+.ropeproject
+.tmp
+.sass-cache
+.DS_Store
+.zedstate
+.idea
+.cache/
+venv/
+*.py[cod]
+
+# Installer logs
+pip-log.txt
+
+# Python Packages
+*.egg
+*.egg-info/
+.eggs/
+.installed.cfg
+.mypy_cache/
+.Python
+__pycache__
+develop-eggs/
+eggs/
+
+# Unit test / coverage reports
+.coverage
+tests/unit/.cache/
+.tox
+nosetests.xml
+karma-test-results.xml
+
+# Ignored config
+config/development/eventbot.env
+
+# docs generation
+generated
+build_docs
