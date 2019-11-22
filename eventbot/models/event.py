@@ -8,7 +8,6 @@ from typing import (
 )
 
 from pynamodb.attributes import (
-    BooleanAttribute,
     ListAttribute,
     NumberAttribute,
     MapAttribute,
