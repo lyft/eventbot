@@ -1,5 +1,9 @@
 SHELL := /bin/bash
 
+.PHONY: build_docs # build the docs
+build_docs:
+	./docs/build.sh
+
 .PHONY: test # run all test suites
 test: test_unit test_integration
 
