@@ -9,7 +9,7 @@ def test_healthcheck():
     assert response.data.decode('ascii') == 'OK'
 
 
-@patch('eventbot.routes.views.do_healthcheck')
+@patch('eventbot.routes.api.healthcheck')
 def test_handle_error(healthcheck_fn):
     healthcheck_fn.side_effect = Exception('testException')
 
