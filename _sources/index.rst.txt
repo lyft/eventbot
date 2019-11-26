@@ -1,5 +1,7 @@
-Omnibot
-=======
+Eventbot
+========
+
+An omnibot based service to do organization of basic events in slack.
 
 .. toctree::
   :caption: Docs
