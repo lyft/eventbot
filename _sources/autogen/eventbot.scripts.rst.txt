@@ -1,0 +1,22 @@
+eventbot.scripts package
+========================
+
+Submodules
+----------
+
+eventbot.scripts.create\_tables module
+--------------------------------------
+
+.. automodule:: eventbot.scripts.create_tables
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+
+Module contents
+---------------
+
+.. automodule:: eventbot.scripts
+    :members:
+    :undoc-members:
+    :show-inheritance:

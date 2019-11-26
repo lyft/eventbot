@@ -1,0 +1,22 @@
+tests.unit.eventbot.routes package
+==================================
+
+Submodules
+----------
+
+tests.unit.eventbot.routes.api\_test module
+-------------------------------------------
+
+.. automodule:: tests.unit.eventbot.routes.api_test
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+
+Module contents
+---------------
+
+.. automodule:: tests.unit.eventbot.routes
+    :members:
+    :undoc-members:
+    :show-inheritance:

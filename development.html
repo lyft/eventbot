@@ -1,0 +1,313 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Quickstart and Development &mdash; eventbot 1.0.0-f6bbb5 documentation</title>
+  
+
+  
+  
+    <link rel="shortcut icon" href="_static/favicon.ico"/>
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Contributing" href="contributing.html" />
+    <link rel="prev" title="Configuration" href="configuration.html" /> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> eventbot
+          
+
+          
+            
+            <img src="_static/logo.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.0.0-f6bbb5
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Docs</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="configuration.html">Configuration</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Quickstart and Development</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#prerequisites">Prerequisites</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#quickstart">Quickstart</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="contributing.html">Contributing</a></li>
+</ul>
+<p class="caption"><span class="caption-text">eventbot service python docs</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="autogen/eventbot.html">eventbot package</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">eventbot</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>Quickstart and Development</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/development.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="quickstart-and-development">
+<h1>Quickstart and Development<a class="headerlink" href="#quickstart-and-development" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="prerequisites">
+<h2>Prerequisites<a class="headerlink" href="#prerequisites" title="Permalink to this headline">¶</a></h2>
+<p># You’ll need a bot <a class="reference external" href="https://lyft.github.io/omnibot/configuration.html">ready for use in omnibot</a></p>
+</div>
+<div class="section" id="quickstart">
+<span id="id1"></span><h2>Quickstart<a class="headerlink" href="#quickstart" title="Permalink to this headline">¶</a></h2>
+<p>This quickstart will add a handler configuration to omnibot, start omnibot, and start eventbot.</p>
+<p>Note that this describes the eventbot handler configuration, so you’ll need to update your omnibot handler sections if other bots are configured. It assumes you’re using a bot named <code class="docutils literal notranslate"><span class="pre">eventbot</span></code>, or you’re using a subcommand of the bot <code class="docutils literal notranslate"><span class="pre">omnibot</span></code>.</p>
+<p>Add basic omnibot configuration (in the omnibot service):</p>
+<p><code class="docutils literal notranslate"><span class="pre">config/development/omnibot.conf</span></code>:</p>
+<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="l l-Scalar l-Scalar-Plain">handlers</span><span class="p p-Indicator">:</span>
+  <span class="l l-Scalar l-Scalar-Plain">interactive_component_handlers</span><span class="p p-Indicator">:</span>
+    <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">callback_id</span><span class="p p-Indicator">:</span> <span class="s">&#39;eventbot_events&#39;</span>
+      <span class="l l-Scalar l-Scalar-Plain">response_type</span><span class="p p-Indicator">:</span> <span class="s">&#39;in_channel&#39;</span>
+      <span class="l l-Scalar l-Scalar-Plain">bots</span><span class="p p-Indicator">:</span>
+        <span class="s">&quot;lyft-test-sandbox&quot;</span><span class="p p-Indicator">:</span>
+          <span class="c1"># If you wanted to combine this to an existing bot, you could send to &quot;omnibot&quot;</span>
+          <span class="c1"># here. The unique thing is the callback_id above, so as long as it doesn&#39;t</span>
+          <span class="c1"># clash, it&#39;s OK.</span>
+          <span class="p p-Indicator">-</span> <span class="s">&quot;eventbot&quot;</span>
+      <span class="l l-Scalar l-Scalar-Plain">no_message_response</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">True</span>
+      <span class="l l-Scalar l-Scalar-Plain">callbacks</span><span class="p p-Indicator">:</span>
+        <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">module</span><span class="p p-Indicator">:</span> <span class="s">&quot;omnibot.handlers.network_handlers:http_handler&quot;</span>
+          <span class="l l-Scalar l-Scalar-Plain">kwargs</span><span class="p p-Indicator">:</span>
+            <span class="l l-Scalar l-Scalar-Plain">request_kwargs</span><span class="p p-Indicator">:</span>
+              <span class="l l-Scalar l-Scalar-Plain">path</span><span class="p p-Indicator">:</span> <span class="s">&quot;http://eventbot:8080/api/v1/eventbot&quot;</span>
+  <span class="l l-Scalar l-Scalar-Plain">message_handlers</span><span class="p p-Indicator">:</span>
+    <span class="c1"># A bot that fully owns all commands of the service</span>
+    <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">match</span><span class="p p-Indicator">:</span> <span class="s">&quot;&quot;</span>
+      <span class="l l-Scalar l-Scalar-Plain">match_type</span><span class="p p-Indicator">:</span> <span class="s">&quot;command&quot;</span>
+      <span class="l l-Scalar l-Scalar-Plain">description</span><span class="p p-Indicator">:</span> <span class="s">&quot;create</span><span class="nv"> </span><span class="s">events</span><span class="nv"> </span><span class="s">using</span><span class="nv"> </span><span class="s">eventbot&quot;</span>
+      <span class="l l-Scalar l-Scalar-Plain">bots</span><span class="p p-Indicator">:</span>
+        <span class="s">&quot;friendly-name-for-your-team&quot;</span>
+          <span class="p p-Indicator">-</span> <span class="s">&quot;eventbot&quot;</span>
+      <span class="l l-Scalar l-Scalar-Plain">callbacks</span><span class="p p-Indicator">:</span>
+        <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">module</span><span class="p p-Indicator">:</span> <span class="s">&quot;omnibot.handlers.network_handlers:http_handler&quot;</span>
+          <span class="l l-Scalar l-Scalar-Plain">kwargs</span><span class="p p-Indicator">:</span>
+            <span class="l l-Scalar l-Scalar-Plain">request_kwargs</span><span class="p p-Indicator">:</span>
+              <span class="l l-Scalar l-Scalar-Plain">path</span><span class="p p-Indicator">:</span> <span class="s">&quot;http://eventbot:8080/api/v1/eventbot&quot;</span>
+    <span class="c1"># Example of how to configure this as a subcommand of another bot</span>
+    <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">match</span><span class="p p-Indicator">:</span> <span class="s">&quot;event&quot;</span>
+      <span class="l l-Scalar l-Scalar-Plain">match_type</span><span class="p p-Indicator">:</span> <span class="s">&quot;command&quot;</span>
+      <span class="l l-Scalar l-Scalar-Plain">description</span><span class="p p-Indicator">:</span> <span class="s">&quot;create</span><span class="nv"> </span><span class="s">events</span><span class="nv"> </span><span class="s">using</span><span class="nv"> </span><span class="s">a</span><span class="nv"> </span><span class="s">subcommand</span><span class="nv"> </span><span class="s">of</span><span class="nv"> </span><span class="s">the</span><span class="nv"> </span><span class="s">bot</span><span class="nv"> </span><span class="s">omnibot&quot;</span>
+      <span class="l l-Scalar l-Scalar-Plain">bots</span><span class="p p-Indicator">:</span>
+        <span class="s">&quot;friendly-name-for-your-team&quot;</span>
+          <span class="p p-Indicator">-</span> <span class="s">&quot;omnibot&quot;</span>
+      <span class="l l-Scalar l-Scalar-Plain">callbacks</span><span class="p p-Indicator">:</span>
+        <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">module</span><span class="p p-Indicator">:</span> <span class="s">&quot;omnibot.handlers.network_handlers:http_handler&quot;</span>
+          <span class="l l-Scalar l-Scalar-Plain">kwargs</span><span class="p p-Indicator">:</span>
+            <span class="l l-Scalar l-Scalar-Plain">request_kwargs</span><span class="p p-Indicator">:</span>
+              <span class="l l-Scalar l-Scalar-Plain">path</span><span class="p p-Indicator">:</span> <span class="s">&quot;http://eventbot:8080/api/v1/eventbot&quot;</span>
+</pre></div>
+</div>
+<p>Start omnibot, using docker-compose:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># in the omnibot repo root</span>
+docker-compose up
+</pre></div>
+</div>
+<p>Start eventbot, using docker-compose:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># in the eventbot repo root</span>
+docker-compose up
+</pre></div>
+</div>
+<p>Start <a class="reference external" href="https://ngrok.com/download">ngrok</a>:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>./ngrok http <span class="m">80</span>
+</pre></div>
+</div>
+<p>Connect your slack app’s <code class="docutils literal notranslate"><span class="pre">Event</span> <span class="pre">Subscriptions</span></code> to the https ngrok link (see the <cite>Forwarding</cite> section of the ngrok command output), using the <code class="docutils literal notranslate"><span class="pre">Event</span> <span class="pre">Subscriptions</span></code> section of the slack api dashboard. Example URL: <code class="docutils literal notranslate"><span class="pre">https://abcd.ngrok.com/api/v1/slack/event</span></code></p>
+<p>Connect your slack app’s <code class="docutils literal notranslate"><span class="pre">Interactive</span> <span class="pre">Components</span></code> to the http ngrok link, using the <code class="docutils literal notranslate"><span class="pre">Interactive</span> <span class="pre">Components</span></code> section of the slack api dashboard. Example URL: <code class="docutils literal notranslate"><span class="pre">https://abcd.ngrok.com/api/v1/slack/interactive</span></code></p>
+<p>You should likely subscribe to the following events:</p>
+<ul class="simple">
+<li>Bot Events<ul>
+<li><code class="docutils literal notranslate"><span class="pre">message.channels</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">message.groups</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">message.im</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">message.mpim</span></code></li>
+</ul>
+</li>
+</ul>
+<p>Invite your app into a channel in your slack workspace, and send a create command to it: <code class="docutils literal notranslate"><span class="pre">&#64;eventbot</span> <span class="pre">create</span></code> or <code class="docutils literal notranslate"><span class="pre">&#64;omnibot</span> <span class="pre">event</span> <span class="pre">create</span></code> (depending on your config)</p>
+<p>The app should respond back with an interactive message that’ll let you create an event.</p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="contributing.html" class="btn btn-neutral float-right" title="Contributing" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="configuration.html" class="btn btn-neutral" title="Configuration" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019-2019, Omnibot Project Authors
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+
+  
+
+  <script type="text/javascript" src="_static/js/theme.js"></script>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

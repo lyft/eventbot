@@ -1,0 +1,22 @@
+eventbot.utils package
+======================
+
+Submodules
+----------
+
+eventbot.utils.settings module
+------------------------------
+
+.. automodule:: eventbot.utils.settings
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+
+Module contents
+---------------
+
+.. automodule:: eventbot.utils
+    :members:
+    :undoc-members:
+    :show-inheritance:

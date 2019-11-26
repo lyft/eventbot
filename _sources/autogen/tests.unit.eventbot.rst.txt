@@ -1,0 +1,29 @@
+tests.unit.eventbot package
+===========================
+
+Subpackages
+-----------
+
+.. toctree::
+
+    tests.unit.eventbot.routes
+
+Submodules
+----------
+
+tests.unit.eventbot.wsgi\_test module
+-------------------------------------
+
+.. automodule:: tests.unit.eventbot.wsgi_test
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+
+Module contents
+---------------
+
+.. automodule:: tests.unit.eventbot
+    :members:
+    :undoc-members:
+    :show-inheritance:

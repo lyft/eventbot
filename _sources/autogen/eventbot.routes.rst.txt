@@ -1,0 +1,22 @@
+eventbot.routes package
+=======================
+
+Submodules
+----------
+
+eventbot.routes.api module
+--------------------------
+
+.. automodule:: eventbot.routes.api
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+
+Module contents
+---------------
+
+.. automodule:: eventbot.routes
+    :members:
+    :undoc-members:
+    :show-inheritance:

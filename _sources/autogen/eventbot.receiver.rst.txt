@@ -1,0 +1,22 @@
+eventbot.receiver package
+=========================
+
+Submodules
+----------
+
+eventbot.receiver.eventbot module
+---------------------------------
+
+.. automodule:: eventbot.receiver.eventbot
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+
+Module contents
+---------------
+
+.. automodule:: eventbot.receiver
+    :members:
+    :undoc-members:
+    :show-inheritance:

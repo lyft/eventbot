@@ -1,0 +1,30 @@
+eventbot.models package
+=======================
+
+Submodules
+----------
+
+eventbot.models.event module
+----------------------------
+
+.. automodule:: eventbot.models.event
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+eventbot.models.user module
+---------------------------
+
+.. automodule:: eventbot.models.user
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+
+Module contents
+---------------
+
+.. automodule:: eventbot.models
+    :members:
+    :undoc-members:
+    :show-inheritance:

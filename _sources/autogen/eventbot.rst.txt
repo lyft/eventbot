@@ -1,0 +1,49 @@
+eventbot package
+================
+
+Subpackages
+-----------
+
+.. toctree::
+
+    eventbot.models
+    eventbot.receiver
+    eventbot.routes
+    eventbot.scripts
+    eventbot.utils
+
+Submodules
+----------
+
+eventbot.app module
+-------------------
+
+.. automodule:: eventbot.app
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+eventbot.settings module
+------------------------
+
+.. automodule:: eventbot.settings
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+eventbot.wsgi module
+--------------------
+
+.. automodule:: eventbot.wsgi
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+
+Module contents
+---------------
+
+.. automodule:: eventbot
+    :members:
+    :undoc-members:
+    :show-inheritance:

@@ -1,0 +1,276 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>eventbot.scripts package &mdash; eventbot 1.0.0-f6bbb5 documentation</title>
+  
+
+  
+  
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="eventbot.utils package" href="eventbot.utils.html" />
+    <link rel="prev" title="eventbot.routes package" href="eventbot.routes.html" /> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> eventbot
+          
+
+          
+            
+            <img src="../_static/logo.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.0.0-f6bbb5
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Docs</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../configuration.html">Configuration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../development.html">Quickstart and Development</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../contributing.html">Contributing</a></li>
+</ul>
+<p class="caption"><span class="caption-text">eventbot service python docs</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="eventbot.html">eventbot package</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="eventbot.html#subpackages">Subpackages</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="eventbot.models.html">eventbot.models package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="eventbot.receiver.html">eventbot.receiver package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="eventbot.routes.html">eventbot.routes package</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">eventbot.scripts package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#submodules">Submodules</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-eventbot.scripts.create_tables">eventbot.scripts.create_tables module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-eventbot.scripts">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="eventbot.utils.html">eventbot.utils package</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="eventbot.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="eventbot.html#module-eventbot.app">eventbot.app module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="eventbot.html#module-eventbot.settings">eventbot.settings module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="eventbot.html#module-eventbot.wsgi">eventbot.wsgi module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="eventbot.html#module-eventbot">Module contents</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">eventbot</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="eventbot.html">eventbot package</a> &raquo;</li>
+        
+      <li>eventbot.scripts package</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/autogen/eventbot.scripts.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="eventbot-scripts-package">
+<h1>eventbot.scripts package<a class="headerlink" href="#eventbot-scripts-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-eventbot.scripts.create_tables">
+<span id="eventbot-scripts-create-tables-module"></span><h2>eventbot.scripts.create_tables module<a class="headerlink" href="#module-eventbot.scripts.create_tables" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="eventbot.scripts.create_tables.CreateTables">
+<em class="property">class </em><code class="descclassname">eventbot.scripts.create_tables.</code><code class="descname">CreateTables</code><span class="sig-paren">(</span><em>func=None</em><span class="sig-paren">)</span><a class="headerlink" href="#eventbot.scripts.create_tables.CreateTables" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">flask_script.commands.Command</span></code></p>
+<dl class="method">
+<dt id="eventbot.scripts.create_tables.CreateTables.create_table_given_class">
+<code class="descname">create_table_given_class</code><span class="sig-paren">(</span><em>cls</em><span class="sig-paren">)</span><a class="headerlink" href="#eventbot.scripts.create_tables.CreateTables.create_table_given_class" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="eventbot.scripts.create_tables.CreateTables.run">
+<code class="descname">run</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#eventbot.scripts.create_tables.CreateTables.run" title="Permalink to this definition">¶</a></dt>
+<dd><p>Runs a command. This must be implemented by the subclass. Should take
+arguments as configured by the Command options.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-eventbot.scripts">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-eventbot.scripts" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="eventbot.utils.html" class="btn btn-neutral float-right" title="eventbot.utils package" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="eventbot.routes.html" class="btn btn-neutral" title="eventbot.routes package" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019-2019, Omnibot Project Authors
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+
+  
+
+  <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
