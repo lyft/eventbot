@@ -70,7 +70,7 @@ pynamodb==3.3.1
 # YAML parser and emitter for Python
 # License: MIT
 # Upstream url: http://pyyaml.org/wiki/PyYAML
-PyYAML==5.1
+PyYAML==5.4
 
 # Library for use by services that receive messages from omnibot.
 # License: Apache2
